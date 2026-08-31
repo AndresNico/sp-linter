@@ -3,4 +3,3 @@ plugins:
   - module: github.com/AndresNico/sp-linter
     import: github.com/AndresNico/sp-linter
     version: v0.1.0
-
