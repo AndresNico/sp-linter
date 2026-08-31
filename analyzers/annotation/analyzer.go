@@ -61,8 +61,6 @@ func inspectSwitchCases(pass *analysis.Pass, sw *ast.SwitchStmt) (touchesPkg, ha
 	return
 }
 
-// resolveConst resolves a selector expression (pkg.Name) to its constant name and package path
-// using type information, so import aliases are handled transparently.
 func resolveConst(pass *analysis.Pass, expr ast.Expr) (name, pkgPath string) {
 	sel, ok := expr.(*ast.SelectorExpr)
 	if !ok {
